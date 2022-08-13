@@ -1,0 +1,232 @@
+/* custom properties */
+:root {
+  --primary-color: rgb(178, 2, 70);
+}
+/* reset */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+body {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* utilities */
+.filter {
+  display: none;
+}
+
+.btn {
+  width: 10vw;
+  height: 3vw;
+  margin: 0 0.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: display 0.3s ease;
+}
+.btn:hover {
+  background-color: blue;
+}
+
+/* estilos para la Cabezera */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.navBar > a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+.navBar a:hover {
+  background-color: var(--primary-color);
+}
+.logo {
+  width: 15%;
+}
+/* estilos para el Titulo */
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 110, 110);
+}
+.titulo > span {
+  padding: 0 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+/* estilo para las categorias */
+.navCategory {
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+/* estilo para las tarjetas */
+
+.container-card {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  width: 20vw;
+  height: 60vh;
+  padding: 1rem;
+  list-style: none;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+.btn-card {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border: none;
+  margin-left: 10rem;
+  width: 7rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: larger;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-card:hover {
+  background-color: blue;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(116, 110, 110);
+  height: 8vh;
+}
+.footer a {
+  padding: 0.7rem;
+}
+footer a:hover {
+  background-color: var(--primary-color);
+}
+.footer h3 {
+  padding-right: 1rem;
+  font-style: italic;
+}
+.social-media {
+  display: flex;
+  padding-left: 1rem;
+}
+
+/* ventna modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgb(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  pointer-events: auto;
+}
+.container-detalle {
+  position: relative;
+  width: 60%;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.container-detalle img {
+  width: 80%;
+  padding: 1rem;
+}
+.container-detalle > section * {
+  text-align: center;
+}
+.btn-cerrar > svg {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto;
+  width: 80%;
+  height: 58vh;
+  max-width: 780px;
+}
+form input[type="text"],
+form input[type="email"] {
+  width: 60%;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+form > textarea {
+  width: 50%;
+  height: 30vh;
+  resize: none;
+}
+form input[type="submit"] {
+  width: 30%;
+  height: 15%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+  font-size: large;
+  cursor: pointer;
+}
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+  color: var(--primary-color);
+  font-size: large;
+  padding-left: 1rem;
+}
+
+form input[type="text"]:valid,
+form input[type="email"]:valid {
+  border: 1px solid rgb(24, 242, 24);
+  border-radius: 10px;
+}

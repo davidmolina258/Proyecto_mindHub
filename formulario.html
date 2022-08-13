@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"><img src="./assets/Logo Amazing Events.png" alt="logo"></div>
+    <nav class="navBar">
+      <a href="./index.html">Home</a><a href="./upcomig.html">Upcoming Event</a><a href="./pastEvent.html">Past
+        Events</a><a href="./formulario.html">Contact</a><a href="">Stats</a>
+    </nav>
+  </header>
+  <div class="titulo">
+    <span><a href="#"><img src="./assets/avance-rapido.png" alt="flecha izquierda"></a></span>
+    <h1>Contact</h1>
+    <span><a href=""><img src="./assets/avance-rapido-derecha.png" alt="flecha derecha"></a></span>
+  </div>
+  <main>
+    <form action="">
+      <input type="text" name="nombre" pattern=^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$
+        title="acepta solo letras y espacio en blanco" placeholder="Escribe tu nombre" required>
+      <br>
+      <input type="email" name="email" placeholder="Escribe tu email"
+        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Formato de correo invalido"
+        required>
+      <br>
+      <textarea name="comentario" cols="30" rows="10" required></textarea>
+      <br>
+      <input type="submit">
+    </form>
+  </main>
+
+
+  <footer class="footer">
+    <div class="social-media"><a href=""><img src="./assets/facebook.png" alt="facebook"></a>
+      <a href=""><img src="./assets/instagram.png" alt="instagram"></a>
+      <a href=""><img src="./assets/whatsapp.png" alt="whatsapp"></a>
+    </div>
+    <h3>Realizado por: David Molina</h3>
+  </footer>
+</body>
+
+</html>
